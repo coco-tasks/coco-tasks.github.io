@@ -1,1 +1,164 @@
-Coming Soon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>COCO-Tasks Dataset</title>
+  <meta name="description" content="COCO-Tasks dataset from the CVPR 2019 paper: What Object Should I Use? - Task Driven Object Detection">
+  <meta name="author" content="Johann Sawatzky, Yaser Souri, Christian Grund, Juergen Gall">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="dist/css/normalize.css">
+  <link rel="stylesheet" href="dist/css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/github-prettify-theme.css">
+  <script src="js/site.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <section class="header">
+      <h2 class="title">COCO-Tasks Dataset</h2>
+<!--      <a class="button button-primary" href="https://github.com/coco-tasks/dataset">Download</a>-->
+      <div class="value-props row">
+        <div class="six columns value-prop">
+          <img class="value-img" src="images/Image.svg">
+          40,000 images
+        </div>
+        <div class="six columns value-prop">
+          <img class="value-img" src="images/task.svg">
+          14 tasks
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href="#about">Dataset</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#download">Download</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#team">Team</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="#paper">Paper</a></li>
+          <li class="navbar-item"><a class="navbar-link" href="http://cv-uni-bonn.de/">CVG-UniBonn</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Dataset -->
+    <div class="docs-section" id="about">
+      <h6 class="docs-header">Coco-Tasks</h6>
+      <p>When humans have to solve everyday tasks, they simply pick the objects that are most suitable. While the question which object should one use for a specific task sounds trivial for humans, it is very difficult to answer for robots or other autonomous systems. This issue, however, is not addressed by current benchmarks for object detection that focus on detecting object categories. We therefore introduce the COCO-Tasks dataset which comprises about 40,000 images where the most suitable objects for 14 tasks have been annotated.</p>
+      <div class="row example">
+        <div class="example-screenshot-wrapper">
+          <img class="example-screenshot" src="images/teaser.png">
+        </div>
+        <div class="one-half offset-by-one-half column">
+          <h6 class="example-header">What object in the scene would a human choose to serve wine?</h6>
+          <p class="example-description">In the left image, the wine glass is preferred to other drinking glasses. In the right image, neither a wine glass nor other drinking glasses are present. The cup is therefore chosen by the human.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Download -->
+    <div class="docs-section" id="download">
+      <h6 class="docs-header">Download</h6>
+      <p>We are providing the dataset for academic use, in the same format as COCO dataset. This means that you can directly use the COCO API to read the annotation of our dataset. Furthermore the annotation tool used to annotate our dataset is also open-sourced.</p>
+      <div class="row">
+        <div class="six columns">
+          <p><strong>Dataset Annotation</strong></p>
+          <p><a class="button button-primary" href="https://github.com/coco-tasks/dataset">Download on Github</a></p>
+        </div>
+        <div class="six columns">
+          <p><strong>Annotation Tool</strong></p>
+          <p><a class="button button" href="https://github.com/coco-tasks/annotation-tool">Fork on Github</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <div class="docs-section" id="team">
+      <h6 class="docs-header">Team</h6>
+      <div class="row centered-text">
+        <div class="three columns value-prop">
+          <a href="https://www.linkedin.com/in/johann-sawatzky-3b075611a/">
+            <img class="team-img" src="images/team/johann.jpg">
+            Johann Sawatzky
+          </a>
+        </div>
+        <div class="three columns value-prop">
+          <a href="https://yassersouri.github.io/">
+            <img class="team-img" src="images/team/yaser.jpg">
+            Yaser Souri
+          </a>
+        </div>
+        <div class="three columns value-prop">
+          <img class="team-img" src="images/team/christian.jpg">
+          Christian Grund
+        </div>
+        <div class="three columns value-prop">
+          <a href="http://gall.cv-uni-bonn.de">
+            <img class="team-img" src="images/team/juergen.jpg">
+            Juergen Gall
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Paper -->
+    <div class="docs-section" id="paper">
+      <h6 class="docs-header">Paper</h6>
+      <p>The COCO-Tasks dataset was introduced in the following CVPR 2019 paper. If you use the dataset, please cite our paper.</p>
+      <div class="row example">
+        <a class="example-screenshot-wrapper" target="_blank" href="https://arxiv.org/abs/1904.03000">
+          <img class="example-screenshot" src="images/paper/the_paper.png">
+        </a>
+        <div class="one-half offset-by-one-half column">
+          <h6 class="example-header">What Object Should I Use? - Task Driven Object Detection</h6>
+          <p class="example-description">Johann Sawatzky<sup>∗</sup>, Yaser Souri<sup>∗</sup>, Christian Grund, Juergen Gall</p>
+          <p class="example-description">∗ indicates equal contribution (alphabetically ordered)</p>
+          <p class="example-description">CVPR 2019</p>
+          <a class="button" href="https://arxiv.org/abs/1904.03000" target="_blank">PDF</a>
+          <a class="button" href="https://github.com/yassersouri/task-driven-object-detection" target="_blank">Code</a>
+        </div>
+      </div>
+      <pre class="code-example">
+        <code class="code-example-body prettyprint">@inproceedings{cocotasks2019,
+    Author    = {Sawatzky, Johann and Souri, Yaser and Grund, Christian and Gall, Juergen},
+    Title     = {{What Object Should I Use? - Task Driven Object Detection}},
+    Booktitle = {{CVPR}},
+    Year      = {2019}
+}</code>
+      </pre>
+    </div>
+
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
